@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/home";
 import Courtney from "./pages/courtney/courtney";
+import TaraComponent from "./pages/tara/tara";
+import Charlie from "./pages/Charlie/Charlie";
+import Nathan from "./pages/nathan/nathan";
 
 export default class App extends Component {
   render() {
@@ -12,6 +15,9 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/courtney" component={Courtney} />
+            <Route path="/tara" component={TaraComponent} />
+            <Route path="/charlie" component={Charlie} />
+            <Route path="/nathan" component={Nathan} />
           </Switch>
         </Router>
       </div>
