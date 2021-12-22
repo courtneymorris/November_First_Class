@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/home";
 import Courtney from "./pages/courtney/courtney";
+import TaraComponent from "./pages/tara/tara";
 
 export default class App extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/courtney" component={Courtney} />
+            <Route path="/tara" component={TaraComponent} />
           </Switch>
         </Router>
       </div>
