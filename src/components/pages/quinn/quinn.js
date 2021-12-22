@@ -1,34 +1,32 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import {
-    Nav, 
-    NavLink, 
-    Bars,
-    NavMenu, 
-} from './navbar-container';
+import { Nav, NavLink as Link, Bars, NavMenu } from "./navbar-container";
 
 const Navbar = () => {
-    return (
-        <Nav>
-            <Bars />
+  return (
+    <Nav>
+      <Bars />
 
-            <NavMenu> 
-                <NavLink to='/about' activeStyle>About</NavLink>
+      <NavMenu>
+        <NavLink to="/about" activeStyle>
+          About
+        </NavLink>
 
-                <NavLink to='/blog' activeStyle>Blog</NavLink>
-
-
-            </NavMenu>
-        </Nav>
-    )
-}
-
+        <NavLink to="/blog" activeStyle>
+          Blog
+        </NavLink>
+      </NavMenu>
+    </Nav>
+  );
+};
 
 export default class Quinn extends Component {
-    render() {
-        return <div className="quinn-wrapper">
-            <h1>Quinn Kimball</h1>
-            <h2></h2>
-        </div>
-    }
+  render() {
+    return (
+      <div className="quinn-wrapper">
+        <h1>Quinn Kimball</h1>
+        <h2></h2>
+      </div>
+    );
+  }
 }
