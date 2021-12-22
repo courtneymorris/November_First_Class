@@ -6,6 +6,9 @@ import Courtney from "./pages/courtney/courtney";
 import TaraComponent from "./pages/tara/tara";
 import Charlie from "./pages/Charlie/Charlie";
 import Nathan from "./pages/nathan/nathan";
+import Marley from "./pages/marley/marley";
+import Quinn from "./pages/quinn/quinn";
+import Arnell from "./pages/arnell/arnell";
 
 export default class App extends Component {
   render() {
@@ -18,6 +21,7 @@ export default class App extends Component {
             <Route path="/tara" component={TaraComponent} />
             <Route path="/charlie" component={Charlie} />
             <Route path="/nathan" component={Nathan} />
+            <Route path="/arnell" component={Arnell} />
           </Switch>
         </Router>
       </div>
