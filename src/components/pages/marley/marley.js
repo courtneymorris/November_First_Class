@@ -6,6 +6,11 @@ export default class Marley extends Component{
     super(props)
     this.state = {value: ' '};
     this.state = {toDolist:' '}
+    this.state = {completedList:' '}
+
+    this.handleInput = this.handleInput(this)
+    this.handleSubmit = this.handleSubmit(this)
+    this.handleTodoClick = this.handleTodoClick(this)
     }
     
 
@@ -18,15 +23,24 @@ export default class Marley extends Component{
         value.toDoList.map((input.value))
 
     }
+    handleTodoClick (event){
+        aler("Task completed")
+        toDolist.value.map((completedList.value))
+    }
 
 
     render(){
         return (
-            <><><h1>ToDo list</h1>
-                <input type="text" value={this.state.value} onSubmit={this.handleInput} placeholder="Type task here..." /></>
-                <button onClick={value.handleSubmit}>Submit</button></>
+            <div>
+            <h1>ToDo list</h1>
+
+            <input type="text" value={this.state.value} onClick={this.handleInput} placeholder="Type task here..." />
+            
+            <button onClick={value.handleSubmit}>Submit</button>
+
+            </div>
+        
         )
-       
     }
 }
 
