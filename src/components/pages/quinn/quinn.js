@@ -23,7 +23,6 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
 
 export default class Quinn extends Component {
     render() {
