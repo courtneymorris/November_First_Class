@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
 
-import { NavLink } from 'react-router-dom' ;
+import NavigationContainer from './navigation/navigation-container.js';
 
 export default class Arnell extends Component {
     render() {
-        return (<div className='arnell-wrapper' >
+        return (
+        <div className='arnell-wrapper' >
+            <NavigationContainer />
             <h1>Arnell C. James</h1>
         </div>
         );    
