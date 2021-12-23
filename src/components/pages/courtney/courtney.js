@@ -19,8 +19,27 @@ export default class Courtney extends Component {
           </p>
         </div>
         <div className="meet-the-students-wrapper">
-          <h3>Meet the Students!</h3>
-          <div className="student-links">Links go here</div>
+          <h3>Click the links below to see what the students are learning!</h3>
+          <div className="student-links">
+            <NavLink to="/arnell" className="courtney-nav-link">
+              Arnell
+            </NavLink>
+            <NavLink to="/charlie" className="courtney-nav-link">
+              Charlie
+            </NavLink>
+            <NavLink to="/marley" className="courtney-nav-link">
+              Marley
+            </NavLink>
+            <NavLink to="/nathan" className="courtney-nav-link">
+              Nathan
+            </NavLink>
+            <NavLink to="/quinn" className="courtney-nav-link">
+              Quinn
+            </NavLink>
+            <NavLink to="/tara" className="courtney-nav-link">
+              Tara
+            </NavLink>
+          </div>
         </div>
       </div>
     );
