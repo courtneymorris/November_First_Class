@@ -22,6 +22,8 @@ export default class App extends Component {
             <Route path="/charlie" component={Charlie} />
             <Route path="/nathan" component={Nathan} />
             <Route path="/arnell" component={Arnell} />
+            <Route path="/marley" component={Marley} />
+            <Route path="/quinn" component={Quinn} />
           </Switch>
         </Router>
       </div>
