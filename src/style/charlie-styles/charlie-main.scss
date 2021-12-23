@@ -1,0 +1,51 @@
+.charlie-wrapper {
+    // height: 100vh;
+    width: 100vw;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background-color: slategrey;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    .character-data {
+        display: grid;
+        width: 60vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 6fr;
+        gap: 2px;
+       text-align: right; 
+       #cData {
+           text-align: center;
+           
+           text-decoration: underline;
+       }
+    }
+
+    #dField {
+        width: 250px;
+
+    }    
+
+    .languages-div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 40vw;
+    }
+
+    .ability-wrapper {
+        display: grid;
+        grid-template-columns: .1fr .25fr;
+        .ability-labels {
+            display: flex;
+            flex-direction: column;
+            margin: 5px, 0px;
+            gap: 2px;
+        }
+        .ability-scores {
+            display: flex;
+            flex-direction: column;
+            margin: 5px, 0px;
+            gap: 2px;
+        }
+    }
+}
