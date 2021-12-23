@@ -24,8 +24,13 @@ export default class Quinn extends Component {
   render() {
     return (
       <div className="quinn-wrapper">
-        <h1>Quinn Kimball</h1>
-        <h2></h2>
+        <div className="quinn-nav">
+          <button>Click</button>
+          <h1>Quinn Kimball</h1>
+          <button>Button</button>
+        </div>
+        
+        
       </div>
     );
   }
