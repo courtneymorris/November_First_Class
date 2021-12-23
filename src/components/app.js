@@ -23,7 +23,7 @@ export default class App extends Component {
             <Route path="/nathan" component={Nathan} />
             <Route path="/arnell" component={Arnell} />
             <Route path="/marley" component={Marley} />
-            <Route path="quinn" component={Quinn} />
+            <Route path="/quinn" component={Quinn} />
           </Switch>
         </Router>
       </div>

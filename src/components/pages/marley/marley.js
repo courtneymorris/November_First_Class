@@ -4,39 +4,46 @@ import {NavLink} from "react-router-dom"
 export default class Marley extends Component{
     constructor(props){
     super(props)
-    this.state = {value: ' '};
-    this.state = {toDolist:' '}
-    this.state = {completedList:' '}
+    this.state = {
+        value: ' ',
+        toDolist:' ',
+        completedList:' '
+};
+    
 
-    this.handleInput = this.handleInput(this)
-    this.handleSubmit = this.handleSubmit(this)
-    this.handleTodoClick = this.handleTodoClick(this)
+    this.handleInput = this.handleInput.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleTodoClick = this.handleTodoClick.bind(this)
     }
     
 
     handleInput(event) {
-        this.state({value: event.target.value})
+        this.setState({value: event.target.value});
     }
 
     handleSubmit (event) {
+        event.preventDefault(event);
         alert("Task added to Todo list")
         value.toDoList.map((input.value))
-
+    
     }
     handleTodoClick (event){
-        aler("Task completed")
-        toDolist.value.map((completedList.value))
+        alert("Task completed")
+
+        value.map((completedList.value))
     }
 
 
     render(){
         return (
             <div>
-            <h1>ToDo list</h1>
-
-            <input type="text" value={this.state.value} onClick={this.handleInput} placeholder="Type task here..." />
             
-            <button onClick={value.handleSubmit}>Submit</button>
+            <form onSubmit={this.handleSubmit}>
+            <h1>ToDo list</h1>
+                <input type="text" value={this.state.value} onChange={this.handleInput} placeholder="Type task here..." />
+            
+                <button type="submit"  >Submit</button>
+            </form>
 
             </div>
         
