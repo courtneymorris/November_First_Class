@@ -4,6 +4,7 @@ import moment from "moment";
 
 import AbilityGenerator from "./ability-generator";
 
+
 export default class Charlie extends Component {
     constructor() {
         super();
@@ -81,12 +82,18 @@ export default class Charlie extends Component {
                         <h4>CHA</h4>
                     </div>
                     <div className="ability-scores">
-                        <input type="text" id="strength" placeholder={AbilityGenerator()}/>
-                        <input type="text" id="dexterity" placeholder={AbilityGenerator()} />
-                        <input type="text" id="constitution" placeholder={AbilityGenerator()}/>
-                        <input type="text" id="intelligence" placeholder={AbilityGenerator()}/>
-                        <input type="text" id="wisdom" placeholder={AbilityGenerator()}/>
-                        <input type="text" id="charisma" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="strength" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="dexterity" placeholder={AbilityGenerator()} />
+                        <input type="text" name="constitution" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="intelligence" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="wisdom" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="charisma" placeholder={AbilityGenerator()}/>
+                    </div>
+                    <div className="ability-modifiers">
+                        <div>
+                            {sTrength = document.getElementById('strength').value }
+                            {console.log(sTrength)}
+                        </div>
                     </div>
                 </div>                
             </div>
