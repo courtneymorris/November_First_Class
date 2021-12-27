@@ -34,18 +34,21 @@
 
     .ability-wrapper {
         display: grid;
-        grid-template-columns: .1fr .25fr;
+        grid-template-columns: .5fr 1fr 1fr;
         .ability-labels {
             display: flex;
             flex-direction: column;
-            margin: 5px, 0px;
-            gap: 2px;
+            
         }
         .ability-scores {
             display: flex;
             flex-direction: column;
-            margin: 5px, 0px;
-            gap: 2px;
+            
+        }
+        .ability-modifiers {
+            display: flex;
+            flex-direction: column;
+            
         }
     }
 }

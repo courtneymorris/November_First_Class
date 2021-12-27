@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Temporal from "temporal";
 import moment from "moment";
 
+import AbilityGenerator from "./ability-generator";
+
 
 export default class Charlie extends Component {
     constructor() {
@@ -80,12 +82,18 @@ export default class Charlie extends Component {
                         <h4>CHA</h4>
                     </div>
                     <div className="ability-scores">
-                        <input type="text" id="strength" />
-                        <input type="text" id="dexterity" />
-                        <input type="text" id="constitution" />
-                        <input type="text" id="intelligence" />
-                        <input type="text" id="wisdom" />
-                        <input type="text" id="charisma" />
+                        <input type="text" name="strength" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="dexterity" placeholder={AbilityGenerator()} />
+                        <input type="text" name="constitution" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="intelligence" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="wisdom" placeholder={AbilityGenerator()}/>
+                        <input type="text" name="charisma" placeholder={AbilityGenerator()}/>
+                    </div>
+                    <div className="ability-modifiers">
+                        <div>
+                            {sTrength = document.getElementById('strength').value }
+                            {console.log(sTrength)}
+                        </div>
                     </div>
                 </div>                
             </div>
